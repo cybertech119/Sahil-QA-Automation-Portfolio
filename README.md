@@ -1,5 +1,6 @@
 ✅ Selenium Login Automation (Pytest)
 
+
 This project automates the login functionality of a web application using Selenium, Pytest, and HTML reporting.
 
 📌 Project Structure
@@ -9,67 +10,76 @@ project/
 │   ├── __init__.py
 │   ├── test_login.py
 │
-├── drivers/        (optional for ChromeDriver/GeckoDriver)
+├── drivers/        (optional: ChromeDriver/GeckoDriver)
 │
 ├── requirements.txt
 │
 └── README.md
 
-🛠 Prerequisites
 
-Make sure you have the following installed:
+**🛠 Prerequisites**
 
-Python 3.8 or above ✅
+Python 3.8+
 
-Google Chrome / Firefox ✅
+Google Chrome / Firefox
 
-ChromeDriver or GeckoDriver (matching browser version)
+Matching ChromeDriver / GeckoDriver
 
-📦 Install Dependencies
+
+**📦 Install Dependencies**
 pip install -r requirements.txt
 
 
-Example requirements:
+**Example requirements:**
 
 selenium
 pytest
 pytest-html
 webdriver-manager
 
-▶️ How to Run Tests
 
-From the project root, run:
+**▶️ Test Execution Commands**
+
+Run a specific test with HTML report:
 
 pytest tests/test_login.py --html=report.html
 
 
-✅ This will execute login test
-📄 Generate an HTML report → report.html
+**⏱ Test Execution Duration**
 
-🧪 Sample Test Flow
+When you run the HTML report, you will see:
 
-Open login page
+✅ Start Time → When test execution began
+✅ End Time → When execution completed
+✅ Total Duration → How long the test took
 
-Enter username & password
-
-Click Login button
-
-Validate successful login
-
-📁 HTML Report Output
-
-After test execution, open:
+You can open:
 
 👉 report.html
 
-in any browser to check results ✅
+in your browser to view these timing details along with pass/fail results.
 
-✨ Future Enhancements
 
-Page Object Model (POM)
+**🧪 Test Scenario**
 
-Multiple test cases for negative login
+Launch browser
 
-Integration with CI/CD (GitHub Actions)
+Navigate to login page
 
-Screenshot capture on failure
+Enter username & password
+
+Click login
+
+Validate successful login
+
+
+
+**📝 Future Enhancements**
+
+Convert to Page Object Model (POM)
+
+Capture screenshots on failure
+
+Add multiple negative test cases
+
+Integrate with CI/CD pipelines
